@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cotecna.Inspections.WebAPI", "Cotecna.Inspections.WebAPI\Cotecna.Inspections.WebAPI.csproj", "{11C4C26F-0888-4A1E-896E-EBB8E744F5D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Presentation", "1.Presentation", "{F039958D-A567-4BC3-B579-263CEF720E3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Core", "2.Core", "{C4E2B78E-8921-4902-A9EA-47F6FF217EEE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Infrastructure", "3.Infrastructure", "{61152CBC-73F2-4105-B5C3-2B54A840B518}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Test", "4.Test", "{8E9FFE67-CBD7-4904-9EB0-78AF377AB237}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cotecna.Inspections.Abstractions", "Cotecna.Inspections.Abstractions\Cotecna.Inspections.Abstractions.csproj", "{8C88A42D-9F96-42E2-AF07-7B41C1CE7913}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cotecna.Inspections.Core", "Cotecna.Inspections.Core\Cotecna.Inspections.Core.csproj", "{20067D98-E6AB-456F-AF4B-FAF1DF137D6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cotecna.Inspections.Infrastructure", "Cotecna.Inspections.Infrastructure\Cotecna.Inspections.Infrastructure.csproj", "{21A5F4CA-BC5B-4AEA-8C21-E2020B171B21}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11C4C26F-0888-4A1E-896E-EBB8E744F5D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11C4C26F-0888-4A1E-896E-EBB8E744F5D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11C4C26F-0888-4A1E-896E-EBB8E744F5D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11C4C26F-0888-4A1E-896E-EBB8E744F5D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C88A42D-9F96-42E2-AF07-7B41C1CE7913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C88A42D-9F96-42E2-AF07-7B41C1CE7913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C88A42D-9F96-42E2-AF07-7B41C1CE7913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C88A42D-9F96-42E2-AF07-7B41C1CE7913}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20067D98-E6AB-456F-AF4B-FAF1DF137D6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20067D98-E6AB-456F-AF4B-FAF1DF137D6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20067D98-E6AB-456F-AF4B-FAF1DF137D6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20067D98-E6AB-456F-AF4B-FAF1DF137D6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21A5F4CA-BC5B-4AEA-8C21-E2020B171B21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21A5F4CA-BC5B-4AEA-8C21-E2020B171B21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21A5F4CA-BC5B-4AEA-8C21-E2020B171B21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21A5F4CA-BC5B-4AEA-8C21-E2020B171B21}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{11C4C26F-0888-4A1E-896E-EBB8E744F5D8} = {F039958D-A567-4BC3-B579-263CEF720E3E}
+		{8C88A42D-9F96-42E2-AF07-7B41C1CE7913} = {C4E2B78E-8921-4902-A9EA-47F6FF217EEE}
+		{20067D98-E6AB-456F-AF4B-FAF1DF137D6A} = {C4E2B78E-8921-4902-A9EA-47F6FF217EEE}
+		{21A5F4CA-BC5B-4AEA-8C21-E2020B171B21} = {61152CBC-73F2-4105-B5C3-2B54A840B518}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5B653FC-1E29-4D59-8B69-A7FE58456EC6}
+	EndGlobalSection
+EndGlobal

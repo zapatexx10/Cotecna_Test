@@ -38,7 +38,7 @@ namespace Cotecna.Inspections.WebAPI.Controllers
 
         // GET: api/Inspectors
         [HttpGet]
-        [Route("api/test")]
+        [Route("api/inspectors")]
         public ActionResult GetInspectors()
         {
             var inspectors = _inspectionService.GetInspectors();

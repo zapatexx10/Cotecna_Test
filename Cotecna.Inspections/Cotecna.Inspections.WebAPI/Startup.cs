@@ -31,7 +31,19 @@ namespace Cotecna.Inspections.WebAPI
             services.AddSwaggerGen(opts => opts.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "Cotecna inspections information", Version = "v1" }));
 
             services.AddSingleton<IDictionary<int, Inspection>>(new Dictionary<int, Inspection>());
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAllDEV",
+                builder =>
+                {
+                    builder
+                        .WithOrigins("http://localhost:4200")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+            });
 
+            //services.AddCors(options => options.AddPolicy("AllowAllDEV", p => p.WithOrigins("http://localhost:4200/").AllowCredentials().AllowAnyMethod().AllowAnyHeader()));
             RegisterPartial<InfrastructureStartup>(services);
             RegisterPartial<CoreStartup>(services);
         }
@@ -44,9 +56,11 @@ namespace Cotecna.Inspections.WebAPI
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseCors("AllowAllDEV");
             app.UseMvc();
             app.UseSwagger();
             app.UseSwaggerUI(opts => opts.SwaggerEndpoint("/swagger/v1/swagger.json", "Contact v1"));
+            
         }
 
         public void RegisterPartial<T>(IServiceCollection services)

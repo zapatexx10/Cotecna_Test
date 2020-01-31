@@ -130,7 +130,7 @@ namespace Cotecna.Inspections.Infrastructure.Repositories
                 try
                 {
                     db.Open();
-                    var result = db.Query<Inspector>(Queries.GetAllInspections).ToList();
+                    var result = db.Query<Inspector>(Queries.GetInspectors).ToList();
                     return result;
                 }
                 catch (Exception)
